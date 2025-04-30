@@ -9,8 +9,8 @@
     <p>
         <?php
         class Food {
-            public $name;
-            public $price;
+            private $name;
+            private $price;
 
             public function __construct(string $name, int $price) {
                 $this->name = $name;
@@ -29,9 +29,9 @@
                 $this->weight = $weight;
             }
 
-            public $name;
-            public $height;
-            public $weight;
+            private $name;
+            private $height;
+            private $weight;
 
             public function show_height() {
                 echo $this->height;
